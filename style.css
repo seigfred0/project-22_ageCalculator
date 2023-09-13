@@ -1,0 +1,119 @@
+
+:root {
+    --font:'Poppins', sans-serif;
+    
+    --white: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--offWhite);
+
+    font-size: 32px;
+    font-family: var(--font);
+}
+
+main {
+    width: 90%;
+    height: 90vh;
+    background-color: var(--white);
+
+    margin: 3em auto;
+
+    border-radius: 30px 30px 150px 30px;
+
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1.5em 0.75em;
+
+    flex-wrap: wrap;
+}
+
+.input-section label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--smokeyGrey);
+
+}
+
+.input-section input {
+    width: 90px;
+    margin-top: 0.1em;
+    padding: 0.4em 0.5em;
+    font-size: 20px;
+
+    border-radius: 7px;
+    border: 2px solid var(--lightGrey);
+    font-family: var(--font);
+    font-weight: 700;
+}
+
+
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button Section */
+.button-section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    padding: 0 0.75em;
+
+}
+
+.button-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--purple);
+    border-radius: 50%; 
+    border: none;
+    padding: 2em;
+
+    width: 65px;
+    height: 65px;
+
+    cursor: pointer;
+}
+
+.purple-button img {
+    width: 30px;
+    height: 25px;
+    z-index: 1;
+}
+
+.button-section_line {
+ 
+    z-index: 0;
+}
+
+
