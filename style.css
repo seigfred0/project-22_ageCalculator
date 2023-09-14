@@ -69,14 +69,27 @@ main {
     border: 2px solid var(--lightGrey);
     font-family: var(--font);
     font-weight: 700;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
+small {
+    font-size: 0.55rem;
+    font-style: italic;
+    color: var(--lightRed);
+    margin-top: 0.4em;
 }
 
 /* Button Section */
@@ -110,6 +123,10 @@ main {
     cursor: pointer;
 
     z-index: 5;
+}
+
+.button-section button:hover {
+    background-color: var(--offBlack);
 }
 
 .purple-button img {
