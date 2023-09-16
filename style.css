@@ -163,3 +163,39 @@ small {
 .output-section span {
     color: var(--purple);
 }
+
+
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 650px;
+    }
+
+    .input-section {
+        max-width: 400px;
+    }
+
+    .input-section input {
+        width: 110px;
+    }
+
+    .button-section {
+        padding: 0 1em 0;
+    }
+    .button-section .line {
+        display: block;
+        position: static;
+    }
+
+    .output-section {
+        line-height: 5rem;
+        margin-top: 0;
+
+        padding: 0 1em 1em;
+    }
+
+    .output-section h1 {
+        font-size: 4rem;
+
+    }
+}

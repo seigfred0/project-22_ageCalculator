@@ -19,8 +19,6 @@ const months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 
 
-
-
 function validate() {
     const inputs = document.querySelectorAll('.input');
     const inputColor = document.querySelectorAll('.input-day-text');
@@ -64,10 +62,35 @@ function validate() {
 
 function final() {
     if (validate()) {
-        console.log("passed");
-    }
+        let d = day - dayInput.value;
+        let m = month - monthInput.value;
+        let y = year - yearInput.value;
+
+
+        if (monthInput.value > month || (monthInput.value === month && dayInput.value > day)) {
+            y--;
+        }
+
+        if (d < 0) {
+            m--;
+            d += months[month - 1];
+        }
+
+        if (m < 0) {
+            y--;
+            m += 12;
+        }
+         
+
+
+
+        dayOutput.innerHTML = d;
+        monthOutput.innerHTML = m;
+        yearOutput.innerHTML = y;
+
+    };
 }
 
 button.addEventListener('click', final);
 
-
+console.log( day + month)
